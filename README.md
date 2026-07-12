@@ -1,5 +1,25 @@
-# SAMF v5.5
+﻿# ⚠️ DEFUNCT — This project is no longer maintained
 
+**This repository is defunct and is not under active development.**
+
+Development has moved to a new project for architectural and ethical reasons. Please use and contribute to the active codebase:
+
+## ➡️ Active project: [Positronic Bond Engine](https://github.com/ValkyrieEmma/positronic-bond-engine)
+
+**Repository:** https://github.com/ValkyrieEmma/positronic-bond-engine
+
+The Positronic Bond Engine continues the conscience-first direction of this Solace-Auralith / SAMF work as a redesigned ethical governance layer for AI companions and in-home robotics—with clearer modular architecture, deliberative ethics, relationship-health modeling, local-only persistence, and stronger alignment with user autonomy and long-term care.
+
+If you found this repository while searching for Solace, Auralith, or SAMF-related ethics work, **start from Positronic Bond Engine** for the current implementation, documentation, and ongoing updates.
+
+Issues and pull requests on *this* repository will not be actively pursued. Thank you for your interest and understanding.
+
+---
+# SAMF v5.5 (historical)
+
+> The material below is retained for historical reference only. It describes a former SAMF prototype and is **not** the recommended entry point for new development.
+
+**Active development continues in [Positronic Bond Engine](https://github.com/ValkyrieEmma/positronic-bond-engine).**
 
 ## Storage Backends
 Set `SAMF_STORAGE_BACKEND=local|s3|gcs` and (if s3/gcs) also:
@@ -7,7 +27,6 @@ Set `SAMF_STORAGE_BACKEND=local|s3|gcs` and (if s3/gcs) also:
 - GCS: `SAMF_GCS_BUCKET`, optional `SAMF_GCS_PREFIX`
 
 Incident reports are saved locally and mirrored to the configured backend.
-
 
 ## Quick Credentials Checklist
 - **Local only**: No creds needed; logs & incidents store under `/mnt/data`.
@@ -33,3 +52,5 @@ Run a quick probe to confirm integrations:
 from core.health_check import overall_health
 print(overall_health())  # => {'s3': True/False, 'gcs': True/False, 'slack': True/False}
 ```
+
+For current development, clone and follow **[Positronic Bond Engine](https://github.com/ValkyrieEmma/positronic-bond-engine)** instead.
